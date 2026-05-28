@@ -12,6 +12,7 @@ Initial scaffold for a PC card game targeting **Windows + Linux** with:
 This repository now includes a first playable simulation layer:
 
 - Uff-Duh domain model (cards, round flow, turn order)
+- Full Uff-Duh deck generator (00..99 unique pairs, 55 cards total)
 - Branch matching logic and first-turn branch protection rule
 - Draw/pass behavior
 - UFF-DA declaration + catch penalty flow

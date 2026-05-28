@@ -35,8 +35,7 @@ hands.append([])
 protected_branch.append(false)
 declared_uff_da.append(false)
 
-deck = Rules.build_standard_deck()
-deck.shuffle()
+deck = UffDuhDeck.create_shuffled_standard_deck()
 discard = [UffDuhCard.new(0, 0)]
 for p in range(player_count):
 for _n in range(Rules.HAND_SIZE):
