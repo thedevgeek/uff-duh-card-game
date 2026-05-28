@@ -7,7 +7,7 @@ var using_godotsteam := false
 
 func _ready() -> void:
 initialized = _initialize_steam()
-emit_signal("steam_ready", initialized)
+steam_ready.emit(initialized)
 
 func _initialize_steam() -> bool:
 if not Engine.has_singleton("Steam"):

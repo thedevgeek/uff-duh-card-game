@@ -8,7 +8,7 @@ var round_number := 1
 var turn_index := 0
 
 var branches: Array[int] = []
-var hands: Array[Array] = []
+var hands: Array[Array[UffDuhCard]] = []
 var deck: Array[UffDuhCard] = []
 var discard: Array[UffDuhCard] = []
 var score_totals: Array[int] = []
