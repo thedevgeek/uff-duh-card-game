@@ -7,7 +7,7 @@ A practical scene layout for the in-game table UI that supports:
 - future online play via Steam
 
 ## Scene file target
-`/tmp/workspace/thedevgeek/uff-duh-card-game/scenes/ui/game_ui.tscn`
+`scenes/ui/game_ui.tscn`
 
 ## Control tree
 
