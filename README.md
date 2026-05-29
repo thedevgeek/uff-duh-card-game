@@ -55,3 +55,23 @@ This repository now includes a first playable local loop:
    - `Godot: Run Headless Check`
 
 If no executable is found, install Godot 4 and rerun `Godot: Run Headless Check`.
+
+## Git push safety (large files)
+
+This repo includes a pre-push hook that blocks outgoing commits containing large files.
+
+- Default limit: 50 MB per file (GitHub warns above 50 MB and rejects above 100 MB).
+- Hook file: `.githooks/pre-push`
+- Check script: `scripts/git/pre-push-large-files.sh`
+
+Enable hooks for this clone:
+
+```bash
+./scripts/git/install-hooks.sh
+```
+
+Optional temporary override for a single push:
+
+```bash
+PRE_PUSH_MAX_FILE_BYTES=100000000 git push
+```
