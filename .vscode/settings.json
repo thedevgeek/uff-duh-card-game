@@ -1,0 +1,14 @@
+{
+  "files.associations": {
+    "*.gd": "gdscript",
+    "*.tscn": "gdresource",
+    "*.tres": "gdresource"
+  },
+  "editor.tabSize": 2,
+  "editor.insertSpaces": false,
+  "[gdscript]": {
+    "editor.insertSpaces": false,
+    "editor.tabSize": 2
+  },
+  "godotTools.lsp.serverPort": 6005
+}

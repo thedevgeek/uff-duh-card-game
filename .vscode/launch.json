@@ -1,0 +1,11 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Godot Project",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "godot4 --path \"${workspaceFolder}\""
+    }
+  ]
+}

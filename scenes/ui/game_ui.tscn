@@ -1,0 +1,215 @@
+[gd_scene format=3]
+
+[node name="GameUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SafeArea" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = -24.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RootVBox" type="VBoxContainer" parent="SafeArea"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="TopBar" type="HBoxContainer" parent="SafeArea/RootVBox"]
+layout_mode = 2
+
+[node name="RoundLabel" type="Label" parent="SafeArea/RootVBox/TopBar"]
+layout_mode = 2
+text = "Round 1/10"
+
+[node name="Spacer" type="Control" parent="SafeArea/RootVBox/TopBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DeckCountLabel" type="Label" parent="SafeArea/RootVBox/TopBar"]
+layout_mode = 2
+text = "Deck: 40"
+
+[node name="UffDaButton" type="Button" parent="SafeArea/RootVBox/TopBar"]
+layout_mode = 2
+text = "UFF-DA!"
+
+[node name="TableArea" type="PanelContainer" parent="SafeArea/RootVBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TableCenter" type="Control" parent="SafeArea/RootVBox/TableArea"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CenterCard" type="PanelContainer" parent="SafeArea/RootVBox/TableArea/TableCenter"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = -64.0
+offset_right = 48.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterCardValue" type="Label" parent="SafeArea/RootVBox/TableArea/TableCenter/CenterCard"]
+layout_mode = 2
+text = "0|0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BranchNorth" type="PanelContainer" parent="SafeArea/RootVBox/TableArea/TableCenter"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -180.0
+offset_right = 40.0
+offset_bottom = -130.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BranchNorthValue" type="Label" parent="SafeArea/RootVBox/TableArea/TableCenter/BranchNorth"]
+layout_mode = 2
+text = "N: 0"
+horizontal_alignment = 1
+
+[node name="BranchEast" type="PanelContainer" parent="SafeArea/RootVBox/TableArea/TableCenter"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 120.0
+offset_top = -25.0
+offset_right = 200.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BranchEastValue" type="Label" parent="SafeArea/RootVBox/TableArea/TableCenter/BranchEast"]
+layout_mode = 2
+text = "E: 0"
+horizontal_alignment = 1
+
+[node name="BranchSouth" type="PanelContainer" parent="SafeArea/RootVBox/TableArea/TableCenter"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = 130.0
+offset_right = 40.0
+offset_bottom = 180.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BranchSouthValue" type="Label" parent="SafeArea/RootVBox/TableArea/TableCenter/BranchSouth"]
+layout_mode = 2
+text = "S: 0"
+horizontal_alignment = 1
+
+[node name="BranchWest" type="PanelContainer" parent="SafeArea/RootVBox/TableArea/TableCenter"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -25.0
+offset_right = -120.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BranchWestValue" type="Label" parent="SafeArea/RootVBox/TableArea/TableCenter/BranchWest"]
+layout_mode = 2
+text = "W: 0"
+horizontal_alignment = 1
+
+[node name="OpponentsRow" type="HBoxContainer" parent="SafeArea/RootVBox"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="OpponentSlot1" type="PanelContainer" parent="SafeArea/RootVBox/OpponentsRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OpponentSlot2" type="PanelContainer" parent="SafeArea/RootVBox/OpponentsRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OpponentSlot3" type="PanelContainer" parent="SafeArea/RootVBox/OpponentsRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OpponentSlot4" type="PanelContainer" parent="SafeArea/RootVBox/OpponentsRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PlayerHandRow" type="HBoxContainer" parent="SafeArea/RootVBox"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="HandScroll" type="ScrollContainer" parent="SafeArea/RootVBox/PlayerHandRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HandCards" type="HBoxContainer" parent="SafeArea/RootVBox/PlayerHandRow/HandScroll"]
+layout_mode = 2
+
+[node name="ActionColumn" type="VBoxContainer" parent="SafeArea/RootVBox/PlayerHandRow"]
+layout_mode = 2
+
+[node name="DrawButton" type="Button" parent="SafeArea/RootVBox/PlayerHandRow/ActionColumn"]
+layout_mode = 2
+text = "Draw"
+
+[node name="PassButton" type="Button" parent="SafeArea/RootVBox/PlayerHandRow/ActionColumn"]
+layout_mode = 2
+text = "Pass"
+
+[node name="PlaySelectedButton" type="Button" parent="SafeArea/RootVBox/PlayerHandRow/ActionColumn"]
+layout_mode = 2
+text = "Play Selected"
+
+[node name="FooterBar" type="HBoxContainer" parent="SafeArea/RootVBox"]
+layout_mode = 2
+
+[node name="StatusLabel" type="Label" parent="SafeArea/RootVBox/FooterBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Your turn"
+
+[node name="ScoresLabel" type="Label" parent="SafeArea/RootVBox/FooterBar"]
+layout_mode = 2
+text = "P1:0 P2:0"
+
+[node name="Overlays" type="CanvasLayer" parent="."]
+
+[node name="PenaltyToast" type="PanelContainer" parent="Overlays"]
+visible = false
+
+[node name="RoundEndDialog" type="AcceptDialog" parent="Overlays"]
+title = "Round Complete"

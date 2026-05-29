@@ -1,0 +1,37 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Godot: Open Editor",
+      "type": "shell",
+      "command": "godot4",
+      "args": [
+        "--path",
+        "${workspaceFolder}"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Godot: Run Headless Check",
+      "type": "shell",
+      "command": "godot4",
+      "args": [
+        "--headless",
+        "--path",
+        "${workspaceFolder}",
+        "--quit"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Godot: Run Project",
+      "type": "shell",
+      "command": "godot4",
+      "args": [
+        "--path",
+        "${workspaceFolder}"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}
