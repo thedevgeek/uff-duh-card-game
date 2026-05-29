@@ -8,7 +8,7 @@
   "editor.insertSpaces": false,
   "[gdscript]": {
     "editor.insertSpaces": false,
-    "editor.tabSize": 2
+    "editor.tabSize": 4
   },
   "godotTools.lsp.serverPort": 6005
 }
