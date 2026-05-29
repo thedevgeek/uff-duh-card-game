@@ -9,7 +9,7 @@ Initial scaffold for a PC card game targeting **Windows + Linux** with:
 
 ## Current status
 
-This repository now includes a first playable simulation layer:
+This repository now includes a first playable local loop:
 
 - Uff-Duh domain model (cards, round flow, turn order)
 - Full Uff-Duh deck generator (00..99 unique pairs, 55 cards total)
@@ -19,6 +19,8 @@ This repository now includes a first playable simulation layer:
 - 10-round scoring framework with increasing round bonus
 - Baseline rule-based AI for local bots
 - Steam service and online session placeholders for GodotSteam + SDR wiring
+- Local human-vs-AI turn loop wired to the main scene UI
+- Linux export preset scaffold (`export_presets.cfg`)
 
 ## Project layout
 
@@ -34,11 +36,11 @@ This repository now includes a first playable simulation layer:
 
 ## Next steps
 
-1. Add card/branch table UI and player hand UX.
-2. Add real turn actions (input-driven + remote RPC events).
-3. Replace bootstrap simulation loop with proper game loop/state machine.
-4. Wire Steam lobby lifecycle and P2P transport through GodotSteam + SDR.
-5. Add deterministic replay/test fixtures for rule validation.
+1. Improve card visuals and branch interaction affordances.
+2. Add missing rule polish (UFF-DA catch interactions in UI flow).
+3. Wire Steam lobby lifecycle and P2P transport through GodotSteam + SDR.
+4. Add deterministic replay/test fixtures for rule validation.
+5. Add CI smoke checks for headless startup + script linting.
 
 ## Local pickup in VS Code (PC)
 
@@ -46,10 +48,10 @@ This repository now includes a first playable simulation layer:
    - `/tmp/workspace/thedevgeek/uff-duh-card-game` (in this environment)
    - Your local clone path on your PC
 2. Install recommended extensions when prompted.
-3. Ensure `godot4` is on your PATH (or update `.vscode/tasks.json` to your Godot executable path).
+3. Ensure Godot 4 is installed. Tasks call `./run_godot.sh`, which auto-detects `godot4`, `godot`, or Flatpak `org.godotengine.Godot`.
 4. Run a task:
    - `Godot: Open Editor`
    - `Godot: Run Project`
    - `Godot: Run Headless Check`
 
-If your Godot executable is named `godot` instead of `godot4`, replace `godot4` in `.vscode/tasks.json` and `.vscode/launch.json`.
+If no executable is found, install Godot 4 and rerun `Godot: Run Headless Check`.

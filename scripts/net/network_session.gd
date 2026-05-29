@@ -10,4 +10,4 @@ ONLINE_STEAM
 var mode: Mode = Mode.LOCAL_VS_AI
 
 func is_online() -> bool:
-return mode == Mode.ONLINE_STEAM
+	return mode == Mode.ONLINE_STEAM

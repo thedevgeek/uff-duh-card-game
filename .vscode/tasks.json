@@ -4,8 +4,9 @@
     {
       "label": "Godot: Open Editor",
       "type": "shell",
-      "command": "godot4",
+      "command": "${workspaceFolder}/run_godot.sh",
       "args": [
+        "--editor",
         "--path",
         "${workspaceFolder}"
       ],
@@ -14,7 +15,7 @@
     {
       "label": "Godot: Run Headless Check",
       "type": "shell",
-      "command": "godot4",
+      "command": "${workspaceFolder}/run_godot.sh",
       "args": [
         "--headless",
         "--path",
@@ -26,10 +27,11 @@
     {
       "label": "Godot: Run Project",
       "type": "shell",
-      "command": "godot4",
+      "command": "${workspaceFolder}/run_godot.sh",
       "args": [
-        "--path",
-        "${workspaceFolder}"
+        "${workspaceFolder}/project.godot",
+        "--scene",
+        "res://scenes/main.tscn"
       ],
       "problemMatcher": []
     }

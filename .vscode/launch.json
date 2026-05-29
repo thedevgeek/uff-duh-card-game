@@ -5,7 +5,7 @@
       "name": "Launch Godot Project",
       "type": "node-terminal",
       "request": "launch",
-      "command": "godot4 --path \"${workspaceFolder}\""
+      "command": "\"${workspaceFolder}/run_godot.sh\" \"${workspaceFolder}/project.godot\" --scene res://scenes/main.tscn"
     }
   ]
 }

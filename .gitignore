@@ -1,0 +1,10 @@
+uff-duh-card-game.code-workspace
+
+# Local Godot cache and generated editor files
+.godot/
+
+# Local engine binaries and downloaded archives
+.tools/
+
+# Local Python virtual env
+.venv/

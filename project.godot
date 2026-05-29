@@ -1,5 +1,5 @@
 ; Engine configuration file.
-; It's best edited using the editor and not directly,
+; It's best edited using the editor UI and not directly,
 ; since the parameters that go here are not all obvious.
 ;
 ; Format:
@@ -9,13 +9,8 @@
 config_version=5
 
 [application]
+
 config/name="Uff-Duh Card Game"
 run/main_scene="res://scenes/main.tscn"
-config/features=PackedStringArray("4.3")
+config/features=PackedStringArray("4.5")
 config/icon="res://icon.svg"
-
-[autoload]
-SteamService="*res://scripts/net/steam_service.gd"
-
-[rendering]
-renderer/rendering_method="forward_plus"
