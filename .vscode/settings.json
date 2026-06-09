@@ -17,5 +17,6 @@
       "envManager": "ms-python.python:venv",
       "packageManager": "ms-python.python:pip"
     }
-  ]
+  ],
+  "godotTools.editorPath.godot4": "c:\\Users\\watso\\Downloads\\Godot_v4.6.3-stable_win64.exe\\Godot_v4.6.3-stable_win64.exe"
 }
